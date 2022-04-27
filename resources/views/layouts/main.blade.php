@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    @@yield('name')
+    @yield('name')
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
