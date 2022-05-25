@@ -112,7 +112,7 @@
 
                                 {{-- botoes --}}
                                 <div class="d-flex">
-                                    <button class="btn btn-primary btn-lg disabled flex-fill me-1" id="submitButton" type="submit">Submit</button>
+                                    <button class="btn btn-primary btn-lg flex-fill me-1" id="submitButton" type="submit">Submit</button>
                                     <button class="btn btn-secondary btn-lg flex-fill ms-1" id="resetButton" type="reset">Reset</button>
                                 </div>
                             </form>

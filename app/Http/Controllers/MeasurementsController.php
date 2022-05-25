@@ -35,7 +35,16 @@ class MeasurementsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //cirando o objeto medidas
+        $measurements = new Measurements();
+
+        //alterando atributos do objeto
+        // $measurements->date = $request->all();
+
+        //salvando os dados
+        // $measurements->save();
+
+        return 'a';
     }
 
     /**

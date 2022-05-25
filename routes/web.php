@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MeasurementsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,7 @@ Route::get('/measurements', function(){
 });
 
 Route::get('/measurements/new', function(){
-    return view('measurements/form');
+    return view('measurements.form');
 });
+
+Route::post('measurements/new', [MeasurementsController::class, 'store']);
