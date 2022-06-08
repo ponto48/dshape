@@ -14,7 +14,9 @@ class MeasurementsController extends Controller
      */
     public function index()
     {
-        //
+        $measurements = Measurements::all();
+
+        return view('measurements.list')->with('measurements', $measurements);
     }
 
     /**
@@ -35,13 +37,13 @@ class MeasurementsController extends Controller
      */
     public function store(Request $request)
     {
-        //cirando o objeto medidas
-        $measurements = new Measurements();
+        // //cirando o objeto medidas
+        // $measurements = new Measurements();
 
-        //alterando atributos do objeto
-        // $measurements->date = $request->all();
+        // foreach ($request as $key => $value) {
+        //     $measurements->$key = $value;
+        // }
 
-        //salvando os dados
         // $measurements->save();
 
         return 'a';

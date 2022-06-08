@@ -17,7 +17,7 @@
                     <div class="card-body">
 
                         <div class="container px-3 my-3">
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <form action="/measurements/new" id="contactForm" method="POST">
 
                                 {{-- data --}}
                                 <div class="form-floating mb-3">
