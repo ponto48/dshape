@@ -38,5 +38,19 @@ class MeasurementsController extends Controller
     //Redirecionar para a página de medidas
     return redirect('/measurements');
 
-  }
-}
+  }//fim do store
+
+  public function destroy($id){
+
+     //Retornar a medida do banco de dados
+     $measurement = Measurements::findOrFail($id);
+
+     //excluir a medida do banco de dados
+     $measurement->delete();
+
+     //Redirecionar para a página de medidas
+     return redirect('/measurements');
+
+  }// fim do destroy
+
+}//fim da classe
